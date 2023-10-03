@@ -1,0 +1,124 @@
+/* global-features  */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.list >* {
+    list-style-type: none;
+    /* margin: 10px; */
+    /* border-color: red;
+    border-style: solid;
+    border-width: 3px; */
+}
+
+
+.box {
+    border-style: solid;
+    border-width: 4px;
+    border-color: black;
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+}
+
+.box>* {
+    margin: 10px;
+}
+
+.btn {
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    box-shadow: 4px 4px black;
+    padding: 5px 15px 5px 15px;
+}
+
+.hyperlink {
+    text-decoration: underline;
+    color: rgb(108, 130, 255);
+}
+
+.bold {
+    font-style: bold;
+}
+
+/* top-bar  */
+#profile-bar {
+    max-width: 1200px;
+    height: 50px;
+    background-color: silver;
+    margin: auto;
+}
+
+#profile-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    flex-direction: row;
+}
+
+#search {
+    width: 400px;
+    height: 20px;
+}
+
+
+/* website-body  */
+
+
+
+#wrapper {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+}
+
+.column {
+    padding-top: 20px;
+}
+
+#column-left {
+    flex: 3;
+}
+
+#column-left .btn {
+    background-color: gold;
+}
+#column-right .btn {
+    background-color: rgb(19, 192, 10);
+}
+#profile-list .btn {
+    background-color: rgb(24, 110, 230);
+    color: white;
+}
+
+#column-right {
+    flex: 2;
+    margin-left: 20px;
+}
+
+#def-1-list >*, #def-2-list >*, #side-list >* {
+    margin: 10px;
+    display: flex;
+}
+
+#def-1-list >*, #def-2-list >* {
+    justify-content: center; 
+}
+
+#def-1, #def-2 {
+    display: flex;
+}
+
+#def-1-list, #def-2-list {
+    flex: 2;
+}
+#ninja-1, #ninja-2 {
+    flex: 3;
+}
