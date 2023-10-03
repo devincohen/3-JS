@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="button-clicker-style.css">
+    <title>Dojonary</title>
+</head>
+<body>
+    <!-- top-bar  -->
+    <div id="profile-bar">
+        <ul class="list" id="profile-list">
+            <li id="dojonary">
+                <h1 class="dojo-header">Dojonary</h1> 
+            </li>
+            <li>
+                <input type="text" name="search" id="search" placeholder="Search">
+            </li>
+            <li>
+                <button class="btn" id="login" onclick="loginLogoff(this)">Login</button>
+            </li>
+        </ul>
+    </div>
+
+    <!-- website-body  -->
+    <div class="body">
+        <div id="wrapper">
+            
+            <!-- left-side  -->
+            <div class="column" id="column-left">
+                <div class="box" id="def-1">
+
+                    <!-- definition-1  -->
+                    <div class="list" id="def-list-1">
+                        <ul class="list" id="def-1-list">
+                            <li>
+                                <h1>ninja</h1>
+                            </li>
+                            <li>
+                                <h4>noun</h4>
+                            </li>
+                            <li>
+                                <h5>Plural: ninjas</h5>
+                            </li>
+                            <li>
+                                <button class="btn" id="likes-btn-1" onclick="alert('Ninja was liked')"> 13 Likes</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <h3 class="definition" id="ninja-1">A practitioner skilled in the <span class="hyperlink">Japanese</span> art of <span class="hyperlink">ninjutsu</span></h3>
+                </div>
+
+                    <!-- definition-2  -->
+                <div class="box" id="def-2">
+                    <div class="list" id="def-list-2">
+                        <ul class="list" id="def-2-list">
+                            <li>
+                                <h1>ninja</h1>
+                            </li>
+                            <li>
+                                <h4>noun</h4>
+                            </li>
+                            <li>
+                                <h5>Plural: ninjas</h5>
+                            </li>
+                            <li>
+                                <button class="btn" id="likes-btn-2" onclick="alert('Ninja was liked')"> 37 Likes</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <h3 class="definition" id="ninja-2">A <span class="hyperlink">programmer</span> who breaks down problems with <span class="definition">zen</span>-like focus</h3>
+                </div>
+            </div>
+
+            <!-- right-side  -->
+            <div class="column" id="column-right">
+
+                <!-- side-panel  -->
+                <div class="box" id="side-panel">
+                    <ul class="list" id="side-list">
+                        <li>
+                            <h2>Dojonary is defined by <span class="bold">YOU</span></h2>
+                        </li>
+                        <li>
+                            <button class="btn" id="add-def-button" onclick="hide(this)">Add Definition</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="button-clicker-code.js"></script>
+</body>
+</html>
