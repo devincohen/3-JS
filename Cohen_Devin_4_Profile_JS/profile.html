@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <div class="container">
+        <div id="profile-bar">
+            <div class="section" id="section-1">
+                <h1 id="profile-tag">Profile</h1>
+                <ul id="profile-list">
+                    <li>Home</li>
+                    <li id="active">My Profile</li>
+                    <li>Find Connections</li>
+                </ul>
+            </div>
+            <div class="section" id="section-2">
+                <button id="sign-out">Sign Out</button>
+            </div>
+        </div>
+        <div id="body">
+            <div id="wrapper">
+                <div class="column" id="column-1">
+                    <div id="profile">
+                        <div id="profile-head"></div>
+                        <div class="body" id="profile-body">
+                            <div class="spacer"></div>
+                            <img src="imgs/jane-m.jpg" id="jane" alt="Jane">
+                            <div class="name-header" id="profile-name">Jane M.</div>
+                            <div id="location">
+                                <ul class="entry-list" id="location-list">
+                                    <li><img src="icons/map-marker.png" id="map" alt="map"></li>
+                                    <li>Seattle</li>
+                                </ul>
+                            </div>
+                            <div id="description">
+                                <ul>
+                                    <li>Developer | Engineer | Problem Solver</li>
+                                    <li>Master of shadows and of the internet!</li>
+                                </ul>
+                            </div>
+                            <div class="settings">
+                                <img src="icons/gear.png" id="gear" alt="gear" onclick="editName()">
+                                <label for="gear">edit profile</label>
+                            </div>                        
+                        </div>
+                    </div>
+                    <div id="education">
+                        <div class="header" id="education-head">Education</div>
+                        <div id="education-body">
+                            <div class="entry" id="entry-title">Coding Dojo - Full Stack Bootcamp</div>
+                            <div class="entry" id="entry-date">Dec 2019 - March 2020</div>
+                            <div class="entry" id="entry-description">Triple black belt in Python, MERN, and C#...</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column" id="column-2">
+                    <div id="requests">
+                        <div class="header" id="request-head">
+                            <div><span class="count" id="requests-count">2</span>Connection Requests</div>
+                        </div>
+                        <div class="body" id="request-body">
+                            <div class="entry name" id="entry-1">
+                                <ul class="entry-list" >
+                                    <li><img src="imgs/todd-s.jpg" class="icon-image" id="todd" alt="todd"></li>
+                                    <li class="name-list">Todd E.</li>
+                                </ul>
+                                <ul class="entry-list-affirm">
+                                    <li><img src="icons/accept-circle.png" class="response-image" alt="accept" onclick="hideIncrease('#entry-1','#requests-count','#connects-count')"></li>
+                                    <li><img src="icons/close-circle.png" class="response-image" alt="close" onclick="hide('#entry-1','#requests-count')"></li>
+                                </ul>
+                            </div>
+                            <div class="entry name" id="entry-2">
+                                <ul class="entry-list">
+                                    <li><img src="imgs/phil-s.jpg" class="icon-image" id="phil" alt="phil"></li>
+                                    <li class="name-list">Phil K.</li>
+                                </ul>
+                                <ul class="entry-list-affirm">
+                                    <li><img src="icons/accept-circle.png" class="response-image" alt="accept" onclick="hideIncrease('#entry-2','#requests-count','#connects-count')"></li>
+                                    <li><img src="icons/close-circle.png" class="response-image" alt="close" onclick="hide('#entry-2','#requests-count')"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="connections">
+                        <div class="header" id="connections-header">
+                            <div><span class="count" id="connects-count">418</span>Connections</div>
+                        </div>
+                        <div class="body" id="connections-body">
+                            <div class="entry name">
+                                <ul class="entry-list">
+                                    <li><img src="imgs/adrien-s.jpg" class="icon-image" id="adrien" alt="adrien"></li>
+                                    <li class="name-list">Adrien S.</li>
+                                </ul>
+                            </div>
+                            <div class="entry name">
+                                <ul class="entry-list">
+                                    <li><img src="imgs/anne-s.jpg" class="icon-image" id="anne" alt="anne"></li>
+                                    <li class="name-list">Anne S.</li>
+                                </ul>
+                            </div>
+                            <div class="entry name">
+                                <ul class="entry-list">
+                                    <li><img src="imgs/alayne-s.jpg" class="icon-image" id="alayne-s" alt="alayne-s"></li>
+                                    <li class="name-list">Alayne S.</li>
+                                </ul>
+                            </div>
+                            <div class="entry name">
+                                <ul class="entry-list">
+                                    <li><img src="imgs/arry-s.jpg" class="icon-image" id="arry-s" alt="arry-s"></li>
+                                    <li class="name-list">Arry S.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="body" id="view-more">
+                            <h2 class="hyperlink">View More</h2>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+</body>
+</html>
