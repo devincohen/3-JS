@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Likes Part-2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- profile-bar  -->
+    <div id="profile-bar">
+        <ul class="list" id="profile-list">
+            <li id="dojonary">
+                <h1 class="dojo-header">Profile</h1> 
+            </li>
+        </ul>
+    </div>
+    
+    <!-- body  -->
+    <div class="body">
+        <div class="wrapper">
+            
+    <!-- left-side (side-panel) -->
+            <div class="column" id="column-left">
+                <div class="box" id="side-panel-box">
+                    <ul class="list list-vertical" id="side-panel-list">
+                        <li>
+                            <img src="imgs/user.png" id="user-photo" alt="user">
+                        </li>
+                        <li>
+                            <h3 class="text hyperlink">Add an avatar</h3>
+                        </li>
+                        <li>
+                            <h2 class="username-header">James Doe</h2>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+                
+    <!-- right-side  -->
+            <div class="column" id="column-right">
+                <div class="box" id="profile-1-box">
+                    <ul class="list list-horizontal" id="user-likes-list">
+                        <li>
+                            <h2 class="username-header">Some User</h2>
+                        </li>
+                        <li>
+                            <h3 class="likes-header" id="likes-header-1">3 Like(s)</h3>
+                        </li>
+                        <li>
+                            <button class="btn" id="likes-1-btn" onclick="addLike1()">Like</button>
+                        </li>
+                    </ul>
+                    <h3 class="description-header">This user is the best user ever</h3>
+                </div>
+                <div class="box" id="profile-2-box">
+                    <ul class="list list-horizontal" id="user-likes-list">
+                        <li>
+                            <h2 class="username-header">Some User</h2>
+                        </li>
+                        <li>
+                            <h3 class="likes-header" id="likes-header-2">3 Like(s)</h3>
+                        </li>
+                        <li>
+                            <button class="btn" id="likes-2-btn" onclick="addLike2()">Like</button>
+                        </li>
+                    </ul>
+                    <h3 class="description-header">This user is the best user ever</h3>
+                </div>
+                <div class="box" id="profile-3-box">
+                    <ul class="list list-horizontal" id="user-likes-list">
+                        <li>
+                            <h2 class="username-header">Some User</h2>
+                        </li>
+                        <li>
+                            <h3 class="likes-header" id="likes-header-3">3 Like(s)</h3>
+                        </li>
+                        <li>
+                            <button class="btn" id="likes-3-btn" onclick="addLike3()">Like</button>
+                        </li>
+                    </ul>
+                    <h3 class="description-header">This user is the best user ever</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
