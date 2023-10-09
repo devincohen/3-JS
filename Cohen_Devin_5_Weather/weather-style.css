@@ -1,0 +1,137 @@
+/* global  */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.horizontal-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.hyperlink {
+    color: rgb(53, 103, 255);
+    text-decoration: underline;
+}
+
+
+/* header  */
+.menu-container {
+    background-color: rgb(0, 204, 255);
+}
+
+#menu-bar {
+    margin: auto;
+    width: 1000px;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#menu-bar >* {
+    justify-content: space-evenly;
+    color: white;
+}
+
+#city-list >* {
+    margin-left: 100px;
+    font-size: 16pt;
+}
+
+/* body  */
+#temperature-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1000px;
+    margin: auto;
+    border-bottom: solid 3px black;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#weather-segment {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    width: 1000px;
+}
+
+.box {
+    background-color: rgb(220, 220, 220);
+}
+
+.weather-list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.weather-list >* {
+    margin: 20px;
+}
+
+.weather-box {
+    width: 235px;
+}
+
+.temp-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 20pt;
+}
+
+.temp-high {
+    color: red;
+}
+
+.temp-low {
+    color: blue;
+}
+
+.weather-pic {
+    border-radius: 50%;
+    width: 170px;
+}
+
+#cookies-bar {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+#cookies-box {
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    border: solid 4px black;
+}
+
+#cookie-pic {
+    margin-right: 50px;
+    margin-left: 10px;
+}
+
+.btn {
+    width: 100px;
+    height: 50px;
+    margin-right: 20px;
+    margin-left: 50px;
+    background-color: rgb(152, 175, 250);
+    box-shadow: 3px 3px;
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="weather-style.css">
+</head>
+<body>
+    <!-- header, menu-bar  -->
+    <div class="menu-container">
+        <div id="menu-bar">
+            <h1 class="header" id="dojoweather">DojoWeather</h1>
+            <ul class="horizontal-list" id="city-list">
+                <li>
+                    <h4  id="burbank" onclick="alertCity(this)">Burbank</h4>
+                </li>
+                <li>
+                    <h4 id="chicago" onclick="alertCity(this)">Chicago</h4>
+                </li>
+                <li>
+                    <h4 id="dallas" onclick="alertCity(this)">Dallas</h4>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- body  -->
+    <div class="body">
+        <!-- temperature-bar  -->
+        <div id="temperature-bar">
+            <h2 class="header" id="san-jose">San Jose</h2>
+            <div id="temp-select">
+                <label for="units">show temperature in </label>
+                <select name="units" id="units" onchange="fahrCels()">
+                    <option value="fahrenheit">ºF</option>
+                    <option value="celsius">ºC</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- weather-segment  -->
+        <div id="weather-segment">
+            <div class="box weather-box" id="weather-1">
+                <ul class="weather-list">
+                    <li>
+                        <h3>Today</h3>
+                    </li>
+                    <li>
+                        <img src="assets/some_rain.png" class="weather-pic" alt="rain">
+                    </li>
+                    <li>
+                        <h6>some rain</h6>
+                    </li>
+                </ul>
+                <ul class="temp-list">
+                    <li class="temp-high" id="temp-1">75º</li>
+                    <li class="temp-low" id="temp-2">65º</li>
+                </ul>
+            </div>
+            <div class="box weather-box" id="weather-2">
+                <ul class="weather-list">
+                    <li>
+                        <h3>Tomorrow</h3>
+                    </li>
+                    <li>
+                        <img src="assets/some_sun.png" class="weather-pic" alt="sun">
+                    </li>
+                    <li>
+                        <h6>some sun</h6>
+                    </li>
+                </ul>
+                <ul class="temp-list">
+                    <li class="temp-high" id="temp-3">80º</li>
+                    <li class="temp-low" id="temp-4">66º</li>
+                </ul>
+            </div>
+            <div class="box weather-box" id="weather-3">
+                <ul class="weather-list">
+                    <li>
+                        <h3>Friday</h3>
+                    </li>
+                    <li>
+                        <img src="assets/some_clouds.png" class="weather-pic" alt="clouds">
+                    </li>
+                    <li>
+                        <h6>some clouds</h6>
+                    </li>
+                </ul>
+                <ul class="temp-list">
+                    <li class="temp-high" id="temp-5">69º</li>
+                    <li class="temp-low" id="temp-6" >61º</li>
+                </ul>
+            </div>
+            <div class="box weather-box" id="weather-4">
+                <ul class="weather-list">
+                    <li>
+                        <h3>Saturday</h3>
+                    </li>
+                    <li>
+                        <img src="assets/some_sun.png" class="weather-pic" alt="sun">
+                    </li>
+                    <li>
+                        <h6>some sun</h6>
+                    </li>
+                </ul>
+                <ul class="temp-list">
+                    <li class="temp-high" id="temp-7" >78º</li>
+                    <li class="temp-low" id="temp-8" >70º</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <!-- cookies-bar  -->
+    <div id="cookies-bar">
+        <ul class="box" id="cookies-box">
+            <li id="cookie-pic">
+                <img class="icon" src="assets/cookie.png" alt="">
+            </li>
+            <li>
+                <ul id="cookie-text">
+                    <li>
+                        <h3>Stop! Cookie time</h3>
+                    </li>
+                    <li>
+                        <h4>We use cookies (sadly not the edible ones) to personalize content and ads to provide social media features and to analyze our traffic. <span class="hyperlink">Read More...</span></h4>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <button class="btn" onclick="hide('#cookies-bar')">I Accept</button>
+            </li>
+        </ul>
+    </div>
+    
+    
+    <script src="weather-script.js"></script>
+</body>
+</html>
